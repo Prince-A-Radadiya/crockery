@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ------- HEADER START ------- */
+header {
+  position: sticky;
+  top: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #80808045;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header ul {
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header ul .c-link {
+  color: #000000 !important;
+}
+
+header ul .c-icon {
+  color: #000000;
+}
+
+header .outer-logo {
+  background-color: #72d411;
+  border-radius: 4px;
+  padding: 5px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+header .logo {
+  font-size: 20px;
+  font-weight: 550;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header nav li {
+  font-size: 17px;
+  font-weight: 500;
+
+}
+
+header nav .c-link {
+  position: relative;
+  transition: 0.25s ease;
+}
+
+header nav .c-link:hover {
+  color: #72d411 !important;
+}
+
+header nav .c-link::before {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #72d411;
+  transition: 0.25s ease;
+}
+
+header nav .c-link:hover::before {
+  width: 100%;
+}
+
+header nav .c-link.active {
+  color: #72d411 !important;
+}
+
+header nav .c-link.active::before {
+  width: 100%;
+}
+
+header .c-icon {
+  font-size: 700;
+  transition: 0.25s ease;
+}
+
+header .c-icon:hover {
+  color: #72d411;
+}
+
+
+
+
+/* ------- HEADER END ------- */
+/* -------- MOBILE MENU -------- */
+
+header .menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+header .mobile-menu {
+  position: fixed;
+  top: 70px;
+  right: 0;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background: #fff;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.4s ease;
+  z-index: 999;
+  padding: 20px;
+  overflow: auto;
+}
+
+header .mobile-menu.open {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+header .mobile-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+header .mobile-menu a {
+  font-size: 17px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 5px 0 !important;
+  transition: color 0.25s ease;
+}
+
+header .mobile-menu a.active {
+  color: #72d411;
+}
+
+header .mobile-menu hr {
+  margin: 15px 0;
 }
