@@ -151,6 +151,136 @@ header .mobile-menu hr {
 /* ------- HEADER END ------- */
 
 
+/* ------- FOOTER START ------- */
+.site-footer {
+  background-color: #000;
+  color: #cfd8c3;
+  padding: 70px 0 30px;
+  font-size: 14px;
+}
+
+footer .footer-top {
+  padding-bottom: 40px;
+}
+
+footer .footer-brand .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+footer .footer-brand h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+footer .footer-brand p {
+  max-width: 360px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+footer .social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+footer .social-icons span {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.312);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+footer .social-icons span:hover {
+  background: #72d411;
+  color: #000;
+  box-shadow: 0 0 12px 1px rgb(109, 192, 0);
+}
+
+footer .footer-links h4,
+footer .footer-contact h4 {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer-links li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+footer .footer-links li:hover {
+  color: #72d411;
+}
+
+footer .footer-contact p {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+footer .footer-contact svg {
+  color: #72d411;
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+footer .footer-bottom {
+  border-top: 1px solid #80808075;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px!important;
+}
+
+footer .bottom-links span {
+  margin-left: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+footer .bottom-links span:hover {
+  color: #72d411;
+}
+
+footer .outer-logo {
+  background: #72d411;
+  border-radius: 4px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+footer .logo {
+  font-size: 20px;
+  font-weight: 550;
+}
+
+/* ------- FOOTER END ------- */
+
+
 
 
 /* ------- HOME START ------- */
@@ -414,7 +544,6 @@ header .mobile-menu hr {
   border-radius: 18px;
   overflow: hidden;
   height: 480px;
-  margin: 0 15px;
   cursor: pointer;
 }
 
@@ -456,6 +585,157 @@ header .mobile-menu hr {
   margin-top: 6px;
   font-size: 22px;
   font-weight: 700;
+}
+
+.home .arrivals-section {
+  padding: 40px 0;
+}
+
+/* HEADER */
+.home .arrivals-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.home .arrivals-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* ARROWS */
+.home .nav-arrows button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .nav-arrows button:hover {
+  background: #000;
+  color: #fff;
+}
+
+.home .arrival-card {
+  position: relative;
+}
+
+.home .arrival-card .badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.home .badge.new {
+  background: #ff8a3d;
+  color: #fff;
+}
+
+.home .badge.limited {
+  background: #72d411;
+  color: #fff;
+}
+
+.home .image-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.home .image-wrap img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.home .add-cart-btn {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 30px);
+  background: #0a0a0a;
+  color: #72d411;
+  border: 1px solid #72d411;
+  padding: 12px;
+  border-radius: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: none;
+}
+
+.home .arrival-card:hover .add-cart-btn {
+  bottom: 15px;
+}
+
+.home .add-cart-btn:hover {
+  background: #72d411;
+  color: #000;
+  box-shadow:
+    0 0 8px rgba(108, 192, 0, 0.6),
+    0 0 16px rgba(108, 192, 0, 0.6),
+    0 0 32px rgba(108, 192, 0, 0.4);
+  transform: translateX(-50%) scale(1.02);
+}
+
+.home .add-cart-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.home .add-cart-btn:hover svg {
+  transform: translateX(4px);
+}
+
+
+.home .arrival-card:hover img {
+  transform: scale(1.08);
+}
+
+
+.home .arrival-info {
+  margin-top: 14px;
+}
+
+.home .arrival-info h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  transition: 0.25s ease;
+}
+
+.home .arrival-card:hover h4 {
+  color: #72d411;
+}
+
+.home .arrival-info p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+.home .arrival-info .price {
+  color: #72d411;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 /* ------- HOME END ------- */

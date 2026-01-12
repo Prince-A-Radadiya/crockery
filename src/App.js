@@ -17,6 +17,7 @@ import Track from './Pages/User/Track';
 import Wishlist from './Pages/User/Wishlist';
 import Account from './Pages/User/Account';
 import Cart from './Pages/User/Cart';
+import Footer from './Component/Footer';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
       </Routes>
 
+      <Footer />
     </div>
   );
 }
