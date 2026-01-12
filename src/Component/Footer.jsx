@@ -79,12 +79,12 @@ const Footer = () => {
 
                         <p>
                             <FiPhone />
-                            +1 (800) COOK-ART
+                            +91 63545 92098
                         </p>
 
                         <p>
                             <FiMail />
-                            hello@culinaryart.com
+                            bhavinchikhaliya063@gmail.com
                         </p>
                     </div>
 
@@ -93,7 +93,7 @@ const Footer = () => {
                 {/* BOTTOM */}
                 <div className="footer-bottom">
                     <p className="mb-0">
-                        © 2024 CulinaryArt Premium Kitchenware. All rights reserved.
+                        © 2024 Bhavin's Premium Kitchenware. All rights reserved.
                     </p>
 
                     <div className="bottom-links">
