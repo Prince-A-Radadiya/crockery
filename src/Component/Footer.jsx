@@ -2,18 +2,17 @@ import {
     FiMapPin,
     FiPhone,
     FiMail,
-    FiShare2,
-    FiDribbble,
-    FiPlay,
 } from "react-icons/fi";
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { TbToolsKitchen3 } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
         <footer className="site-footer">
             <div className="container">
 
-                <div className="row footer-top">
+                <div className="row footer-top gy-3">
 
                     {/* BRAND */}
                     <div className="col-lg-4 col-md-6 footer-brand">
@@ -31,9 +30,15 @@ const Footer = () => {
                         </p>
 
                         <div className="social-icons">
-                            <span><FiShare2 /></span>
-                            <span><FiDribbble /></span>
-                            <span><FiPlay /></span>
+                            <Link to='https://www.instagram.com/b_chikhaliya31?igsh=a284OHd4ZmY0OG43'>
+                                <span><FaInstagram size={17} /></span>
+                            </Link>
+                            <Link to='https://api.whatsapp.com/send?phone=916354592098'>
+                                <span><FaWhatsapp size={17} /></span>
+                            </Link>
+                            <Link to='https://www.facebook.com/share/1aafyAQJFC/'>
+                                <span><FaFacebookF size={17} /></span>
+                            </Link>
                         </div>
                     </div>
 
@@ -87,14 +92,14 @@ const Footer = () => {
 
                 {/* BOTTOM */}
                 <div className="footer-bottom">
-                    <p>
+                    <p className="mb-0">
                         © 2024 CulinaryArt Premium Kitchenware. All rights reserved.
                     </p>
 
                     <div className="bottom-links">
-                        <span>Privacy Policy</span>
-                        <span>Terms of Service</span>
-                        <span>Sitemap</span>
+                        <span className="me-2">Privacy Policy</span>
+                        <span className="mx-2">Terms of Service</span>
+                        <span className="ms-2">Sitemap</span>
                     </div>
                 </div>
 

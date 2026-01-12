@@ -155,7 +155,7 @@ header .mobile-menu hr {
 .site-footer {
   background-color: #000;
   color: #cfd8c3;
-  padding: 70px 0 30px;
+  padding: 50px 0 30px;
   font-size: 14px;
 }
 
@@ -204,7 +204,9 @@ footer .social-icons span:hover {
   color: #000;
   box-shadow: 0 0 12px 1px rgb(109, 192, 0);
 }
-
+footer a{
+  color: #fff!important;
+}
 footer .footer-links h4,
 footer .footer-contact h4 {
   color: #fff;
@@ -250,11 +252,9 @@ footer .footer-bottom {
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 20px!important;
 }
 
 footer .bottom-links span {
-  margin-left: 18px;
   cursor: pointer;
   transition: color 0.3s ease;
 }
