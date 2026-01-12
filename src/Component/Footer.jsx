@@ -14,7 +14,6 @@ const Footer = () => {
 
                 <div className="row footer-top gy-3">
 
-                    {/* BRAND */}
                     <div className="col-lg-4 col-md-6 footer-brand">
                         <div className="logo d-flex align-items-center">
                             <div className="outer-logo me-2">
@@ -42,7 +41,6 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    {/* SHOP */}
                     <div className="col-lg-2 col-md-6 footer-links">
                         <h4>Shop</h4>
                         <ul>
@@ -54,7 +52,6 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* SUPPORT */}
                     <div className="col-lg-3 col-md-6 footer-links">
                         <h4>Support</h4>
                         <ul>
@@ -66,7 +63,6 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* CONTACT */}
                     <div className="col-lg-3 col-md-6 footer-contact">
                         <h4>Contact</h4>
 
@@ -90,7 +86,6 @@ const Footer = () => {
 
                 </div>
 
-                {/* BOTTOM */}
                 <div className="footer-bottom">
                     <p className="mb-0">
                         © 2024 Bhavin's Premium Kitchenware. All rights reserved.

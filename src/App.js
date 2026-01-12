@@ -3,6 +3,11 @@ import { Routes, Route } from 'react-router-dom';
 
 // BOOTSTRAP FILE
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
+// REACT SLICK FILE (SLIDER)
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 // COMPONENT
 import Header from './Component/Header';

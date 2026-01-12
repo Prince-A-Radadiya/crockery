@@ -88,7 +88,7 @@ const Home = () => {
 
             <section className="sec-2">
                 <div className="container">
-                    <div className="row c-border gy-3">
+                    <div className="row c-border gy-3 gy-lg-0">
                         <div className="col-12 col-lg d-flex align-items-center gap-4">
                             <div className="left logo">
                                 <RiTruckLine size={22} />
