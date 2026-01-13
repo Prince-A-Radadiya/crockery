@@ -52,7 +52,7 @@ const Track = () => {
               value={orderId}
               onChange={(e) => setOrderId(e.target.value)}
             />
-            <button className="btn btn-danger" onClick={fetchOrder}>
+            <button className="search-btn" onClick={fetchOrder}>
               <FaSearch />
             </button>
           </div>
