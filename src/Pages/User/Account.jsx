@@ -38,14 +38,6 @@ const Account = () => {
           </div>
 
           <div className="formDiv">
-            <label id="remember">
-              <input type="checkbox" />
-              <div className="checkbox"></div>
-              <span>Remember me</span>
-            </label>
-          </div>
-
-          <div className="formDiv">
             <input type="submit" value="LOGIN" />
           </div>
 
@@ -74,21 +66,14 @@ const Account = () => {
             </div>
           </div>
 
-          <div className="formDiv">
+          <div className="formDiv d-flex align-items-center justify-content-center">
             <input type="password" placeholder="Password" />
             <div className="inputImage">
               <FaLock />
             </div>
           </div>
 
-          <div className="formDiv">
-            <input type="password" placeholder="Repeat Password" />
-            <div className="inputImage">
-              <FaLock />
-            </div>
-          </div>
-
-          <div className="formDiv">
+          <div className="formDiv mt-5">
             <input type="submit" value="REGISTER" />
           </div>
         </form>

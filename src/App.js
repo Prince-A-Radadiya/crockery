@@ -1,18 +1,19 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 
-// BOOTSTRAP FILE
+// BOOTSTRAP
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-// REACT SLICK FILE (SLIDER)
+// REACT SLICK
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// COMPONENT
-import Header from './Component/Header';
+// Layouts
+import UserLayout from './Layout/UserLayout';
+import AdminLayout from './Layout/AdminLayout';
 
-// USER PAGES
+// Pages
 import Home from './Pages/User/Home';
 import Product from './Pages/User/Product';
 import Contact from './Pages/User/Contact';
@@ -22,14 +23,13 @@ import Track from './Pages/User/Track';
 import Wishlist from './Pages/User/Wishlist';
 import Account from './Pages/User/Account';
 import Cart from './Pages/User/Cart';
-import Footer from './Component/Footer';
 
 function App() {
   return (
-    <div>
-      <Header />
+    <Routes>
 
-      <Routes>
+      {/* USER WEBSITE WITH HEADER & FOOTER */}
+      <Route element={<UserLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/product" element={<Product />} />
         <Route path="/contact" element={<Contact />} />
@@ -37,12 +37,13 @@ function App() {
         <Route path="/faq" element={<Faq />} />
         <Route path="/track" element={<Track />} />
         <Route path="/wishlist" element={<Wishlist />} />
-        <Route path="/login-register" element={<Account />} />
         <Route path="/cart" element={<Cart />} />
-      </Routes>
+      </Route>
 
-      <Footer />
-    </div>
+      {/* AUTH PAGE (NO HEADER / FOOTER) */}
+      <Route path="/login-register" element={<Account />} />
+
+    </Routes>
   );
 }
 

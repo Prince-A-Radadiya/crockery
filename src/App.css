@@ -1459,17 +1459,15 @@ footer .logo {
 .account {
   background: #eee;
   min-height: 100vh;
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
-/* COLORS */
 .account {
   --main: #009688;
   --second: #00796b;
   --third: #00695c;
 }
 
-/* CONTAINER */
 .account #formContainer {
   width: 300px;
   background: #fff;
@@ -1478,22 +1476,22 @@ footer .logo {
   border-radius: 3px;
   position: relative;
   overflow: hidden;
-  height: 322px;
+min-height: 322px;
+  height: auto;
   transition: 0.3s ease;
 }
 
 .account #formContainer.toggle {
-  height: 332px;
+  min-height: 322px;
+  height: auto;
 }
 
-/* FORMS */
 .account form {
   background: #fff;
   padding: 15px;
   box-sizing: border-box;
 }
 
-/* SWITCH */
 .account #switch {
   position: absolute;
   top: 15px;
@@ -1534,7 +1532,6 @@ footer .logo {
   transform: rotate(90deg);
 }
 
-/* HEADER */
 .account .formHeader {
   padding-bottom: 25px;
 }
@@ -1546,10 +1543,11 @@ footer .logo {
   text-transform: uppercase;
 }
 
-/* INPUTS */
 .account .formDiv {
   margin-bottom: 15px;
+  width: 100%;
   position: relative;
+  border-radius: 3px;
   overflow: hidden;
 }
 
@@ -1561,6 +1559,7 @@ footer .logo {
   padding: 10px;
   width: 100%;
   text-indent: 42px;
+  height: 38px;
 }
 
 .account .inputImage {
@@ -1576,7 +1575,6 @@ footer .logo {
   color: #777;
 }
 
-/* SUBMIT */
 .account input[type="submit"] {
   width: 100%;
   background: var(--main);
@@ -1593,7 +1591,6 @@ footer .logo {
   background: var(--second);
 }
 
-/* REMEMBER */
 .account #remember {
   display: flex;
   align-items: center;
@@ -1637,7 +1634,6 @@ footer .logo {
   padding-left: 10px;
 }
 
-/* FOOTER */
 .account .formFooter {
   border-top: 1px solid #ddd;
   padding-top: 15px;
@@ -1657,7 +1653,6 @@ footer .logo {
   background: #ccc;
 }
 
-/* LOGIN ANIMATION */
 .account #login.toggle {
   opacity: 0.3;
   transform: scale(0.9);
@@ -1668,6 +1663,7 @@ footer .logo {
   background: var(--main);
   position: absolute;
   top: 100%;
+  left: 0;
   width: 100%;
   transition: 0.3s ease;
 }
@@ -1675,6 +1671,7 @@ footer .logo {
 .account #register.toggle {
   top: 0;
 }
+
 
 .account #register input {
   background: var(--second);
