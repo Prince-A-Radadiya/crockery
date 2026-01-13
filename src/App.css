@@ -982,7 +982,7 @@ footer .logo {
 .contact .contact-info {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  /* gap: 24px; */
 }
 
 .contact .info-item {
@@ -1121,8 +1121,10 @@ footer .logo {
 }
 
 .faq__accordion .accordion-button:not(.collapsed)::after {
-  filter: brightness(10);
   transform: rotate(180deg);
+  filter: brightness(0) saturate(100%)
+    invert(54%) sepia(96%) saturate(468%)
+    hue-rotate(48deg) brightness(97%) contrast(92%);
 }
 
 .faq__accordion .accordion-body {
@@ -1155,6 +1157,284 @@ footer .logo {
   transform: translateY(10px);
 }
 /* ------- FAQ END ------- */
+
+
+
+/* ------- ABOUT START ------- */
+.about {
+  background: #fafaf7;
+  padding: 50px 0;
+  color: #1d1d1d;
+}
+
+.about .commitment h2 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.about .commitment p {
+  max-width: 620px;
+  margin: 10px auto 0;
+  color: #666;
+}
+
+.about .commitment-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 28px;
+  height: 100%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+}
+
+.about .commitment-card .icon {
+  font-size: 28px;
+  color: #72d411;
+  margin-bottom: 12px;
+}
+
+.about .commitment-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.about .commitment-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.about .materials {
+  margin-top: 90px;
+}
+
+.about .materials h2 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.about .materials .subtitle {
+  color: #666;
+  max-width: 620px;
+  margin: 10px auto 0;
+}
+
+.about .material-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+  padding-bottom: 16px;
+}
+
+.about .material-image {
+  aspect-ratio: 1 / 1;   
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.about .material-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.about .material-card:hover .material-image img {
+  transform: scale(1.08);
+}
+
+
+
+.about .material-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 16px 16px 6px;
+}
+
+.about .material-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 16px 18px;
+}
+
+.about .process-btn-wrap {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.about .outline-btn {
+  background: transparent;
+  border: 2px solid #72d411;
+  color: #72d411;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.about .outline-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.about .outline-btn:hover {
+  background: #72d411;
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(114, 212, 17, 0.45);
+  transform: translateY(-2px);
+}
+
+.about .outline-btn:hover svg {
+  transform: translateX(4px);
+}
+
+.about .about-cta {
+  background: #e9f6d9;
+  margin-top: 50px;
+  padding: 60px 30px;
+  border-radius: 18px;
+}
+
+.about .about-cta h2 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.about .about-cta p {
+  color: #555;
+  margin: 10px 0 26px;
+}
+
+.about .cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about .primary-btn {
+  background: #72d411;
+  color: #fff;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.about .secondary-btn {
+  background: #fff;
+  border: 2px solid #72d411;
+  color: #72d411;
+  padding: 14px 26px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+/* ------- ABOUT END ------- */
+
+
+
+/* ----- TRACK START ----- */
+.track-page {
+  background: #faf5f3;
+}
+
+.track-search input {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.track-search input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+  transform: translateY(-1px);
+}
+
+.track-card {
+  border-radius: 14px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.track-card:hover {
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+.discreet-box {
+  gap: 12px;
+  background: #fff4f4;
+  padding: 14px;
+  border-radius: 12px;
+  transition: background 0.25s ease;
+}
+
+.discreet-box .icon {
+  font-size: 22px;
+  color: #dc3545;
+}
+
+.discreet-box:hover {
+  background: #ffe8ea;
+}
+
+.product-card {
+  cursor: pointer;
+}
+
+.product-card a {
+  text-decoration: none;
+}
+
+.product-grid a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.product-icon {
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, #dc3545, #ff6b6b);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-icon {
+  transform: rotate(-6deg) scale(1.08);
+}
+
+/* Timeline */
+.timeline-item {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 18px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-item svg {
+  color: #dc3545;
+  font-size: 18px;
+}
+
+.timeline-item.active {
+  opacity: 1;
+}
+
+.timeline-item:hover {
+  transform: translateX(4px);
+}
+
+.timeline-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* ------- TRACK END ------- */
 
 
 

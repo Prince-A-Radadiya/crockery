@@ -15,7 +15,7 @@ const Contact = () => {
           Our team of culinary experts is here to help you create magic in your kitchen.
         </p>
 
-        <div className="row g-5">
+        <div className="row">
 
           {/* FORM */}
           <div className="col-lg-7">
@@ -53,7 +53,7 @@ const Contact = () => {
           </div>
 
           {/* INFO */}
-          <div className="col-lg-5">
+          <div className="col-lg-5 mt-5 mt-lg-0">
             <div className="contact-info">
               <div className="info-item">
                 <div className="icon"><FiMapPin  /></div>
